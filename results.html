@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz Results by User</title>
+    <style>
+      /* Overall page styling */
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 20px;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      /* Table container styling */
+      .table-container {
+        overflow-x: auto;
+      }
+      /* Table styling */
+      .quiz-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+      }
+      .quiz-table th,
+      .quiz-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+      /* Header styling */
+      .quiz-table thead th {
+        background: #007bff;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      /* Alternating row colors */
+      .quiz-table tbody tr:nth-child(even) {
+        background: #f9f9f9;
+      }
+      .quiz-table tbody tr:hover {
+        background: #f1f1f1;
+      }
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .quiz-table th,
+        .quiz-table td {
+          padding: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quiz Results by User</h1>
+    <div class="table-container">
+      <h1>2403</h1>
+      <table class="quiz-table">
+        <thead>
+          <!-- First header row groups sections -->
+          <tr>
+            <th rowspan="2">Tələbə</th>
+            <th colspan="10">HTML</th>
+            <th colspan="10">CSS</th>
+            <th colspan="5">JS</th>
+            <th colspan="1">TOPLAM</th>
+          </tr>
+          <!-- Second header row lists individual questions and tasks -->
+          <tr>
+            <!-- HTML columns -->
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Q7</th>
+            <th>T1</th>
+            <th>T2</th>
+            <th>T3</th>
+            <!-- CSS columns -->
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Q7</th>
+            <th>T1</th>
+            <th>T2</th>
+            <th>T3</th>
+            <!-- JS columns -->
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>T1</th>
+            <th>T2</th>
+            <th>T3</th>
+
+            <th>Doğru cavablara verilən xallar / Toplam xal sayı</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example row for one user -->
+          <tr>
+            <td>1. Farid Isbandiyarov</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>3 - doğru</td>
+            <td>3 - doğru</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <!-- JS section results -->
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>2. Seyyad Nagiyev</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>3 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>33%</td>
+          </tr>
+          <tr>
+            <td>3. Qasimli Kenan</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>4 - doğru</td>
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <!-- JS section results -->
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+
+            <td>68%</td>
+          </tr>
+          <tr>
+            <td>4. Isgenderli Hemid</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <!-- JS section results -->
+            <td>3 - doğru</td>
+            <td>0 - yanlış</td>
+
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>5. Memmedli Tamerlan</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <!-- JS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+
+            <td>34%</td>
+          </tr>
+          <tr>
+            <td>6. İsgenderli Banu</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>3</td>
+            <td>1</td>
+            <td>3</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>3 - doğru</td>
+            <td>3 - doğru</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <!-- JS section results -->
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+
+            <td>0</td>
+            <td>0</td>
+            <td>5</td>
+
+            <td>59%</td>
+          </tr>
+          <tr>
+            <td>7. Qasimli Amin</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <!-- CSS section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>4 - doğru</td>
+            <td>3 - doğru</td>
+            <td>4 - doğru</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <!-- JS section results -->
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+
+            <td>5</td>
+            <td>5</td>
+            <td>0</td>
+
+            <td>86%</td>
+          </tr>
+          <tr>
+            <td>8. Qedirli Ozcan</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>18%</td>
+          </tr>
+          <tr>
+            <td>9. Adisirinli Davud</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>30%</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>2302</h1>
+      <table class="quiz-table">
+        <thead>
+          <!-- First header row groups sections -->
+          <tr>
+            <th rowspan="2">Tələbə</th>
+            <th colspan="10">HTML</th>
+            <th colspan="10">CSS</th>
+            <th colspan="9">JS</th>
+            <th colspan="1">TOPLAM</th>
+          </tr>
+          <!-- Second header row lists individual questions and tasks -->
+          <tr>
+            <!-- HTML columns -->
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Q7</th>
+            <th>T1</th>
+            <th>T2</th>
+            <th>T3</th>
+            <!-- CSS columns -->
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Q7</th>
+            <th>T1</th>
+            <th>T2</th>
+            <th>T3</th>
+            <!-- JS columns -->
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>T1</th>
+            <th>T2</th>
+            <th>T3</th>
+
+            <th>Doğru cavablara verilən xallar / Toplam xal sayı</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example row for one user -->
+          <tr>
+            <td>1. Məmmədli Əlisami</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>18 / 31</td>
+          </tr>
+          <tr>
+            <td>2. Seyyad Nagiyev</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>3 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>20 / 31</td>
+          </tr>
+          <tr>
+            <td>3. Qasimli Kenan</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>4 - doğru</td>
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <!-- JS section results -->
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+
+            <td>23 / 31</td>
+          </tr>
+          <tr>
+            <td>4. Isgenderli Hemid</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>3 - doğru</td>
+            <td>0 - yanlış</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>19 / 31</td>
+          </tr>
+          <tr>
+            <td>5. Memmedli Tamerlan</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>10 / 31</td>
+          </tr>
+          <tr>
+            <td>6. İsgenderli Banu</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>3 - doğru</td>
+            <td>3 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>3 - doğru</td>
+            <td>1 - doğru</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>23 / 31</td>
+          </tr>
+          <tr>
+            <td>7. Qasimli Amin</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <!-- CSS section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>4 - doğru</td>
+            <td>3 - doğru</td>
+            <td>4 - doğru</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <!-- JS section results -->
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+
+            <td>5</td>
+            <td>5</td>
+            <td>0</td>
+
+            <td>58 / 67</td>
+          </tr>
+          <tr>
+            <td>8. Qedirli Ozcan</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>0 - yanlış</td>
+            <td>0 - yanlış</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>11 / 31</td>
+          </tr>
+          <tr>
+            <td>9. Adisirinli Davud</td>
+            <!-- HTML section results -->
+            <td>1 - doğru</td>
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>1 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- CSS section results -->
+            <td>1 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1 - doğru</td>
+            <td>2 - doğru</td>
+            <td>0 - yanlış</td>
+            <td>2 - doğru</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- JS section results -->
+            <td>2 - doğru</td>
+            <td>2 - doğru</td>
+
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+
+            <td>18 / 31</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
